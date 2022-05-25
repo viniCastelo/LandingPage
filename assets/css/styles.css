@@ -347,30 +347,16 @@ header {
 }
 
 .projects-gallery {
-    width: 100vw;
-    max-width: 1140px;
-    margin-top: 20px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-
+    margin-top: 38px;
+    width: 100%;
+    background-color: red;
 }
 
-.projects-gallery--image {
+.image-area {
+    margin: 30px;
+    background-color: #CCC;
     width: 240px;
-}
-
-.projects-gallery--image .image-area {
-    margin: 10px;
-    width: 260px;
-    height: 160px;
-}
-
-.projects-gallery--image .image-area img {
-    width: inherit;
-    height: inherit;
-}
-
-.projects-gallery--image .image-info {
-    display: none;
+    height: 240px;
 }
