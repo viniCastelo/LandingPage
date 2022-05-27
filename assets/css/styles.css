@@ -24,7 +24,7 @@ body {
 
 
 
-/* Menu Styles */
+/* Menu */
 
 header {
     height: 100px;
@@ -97,7 +97,7 @@ header {
 
 
 
-/* Banner Area Styles */
+/* Banner Area */
 
 .banner {
     background-color: #333;
@@ -236,7 +236,7 @@ header {
 
 
 
-/* About-Us Section Styles */
+/* About-Us Section */
 
 .about-us .left-side {
     flex: 1;
@@ -382,4 +382,24 @@ header {
 .photo-info h2 {
     font-size: 18px;
     font-weight: 600;
+}
+
+
+
+/* Our Team */
+
+.bg-team {
+    background-image: url('../../media/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    ;
+}
+
+.default.dark.bg-team {
+    padding: 0;
+}
+
+.section-team-area {
+    padding: 50px 0px;
+    background-color: rgba(5, 5, 5, 80%);
 }
