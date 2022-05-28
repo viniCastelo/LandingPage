@@ -43,14 +43,14 @@
                 <div class="slide">
                     <div class="slide-area">
                         <h2>DESIGN IS ABOUT<br> <span>COMUNICATION</span></h2>
-                        <h3>CALL US: +00 9 9876-5432</h3>
+                        <h3>CALL US: +00 0 0000-0000</h3>
                         <a class="button" href="/">GET IN TOUCH!</a>
                     </div>
                 </div>
                 <div class="slide">
                     <div class="slide-area">
                         <h2>DESIGN IS ABOUT <br> <span>COMUNICATION</span></h2>
-                        <h3>CALL US: +00 9 9876-5432</h3>
+                        <h3>CALL US: +00 0 0000-0000</h3>
                         <a class="button" href="/">GET IN TOUCH!</a>
                     </div>
                 </div>
@@ -63,13 +63,13 @@
                 </div>
             </div>
             <div class="sliders-arrows">
-                <div id="arrow-left" onclick="previous()" class="arrow-left">◀</div>
-                <div id="arrow-right" onclick="next()" class="arrow-right">▶</div>
+                <div id="arrow-left" class="arrow-left">◀</div>
+                <div id="arrow-right" class="arrow-right">▶</div>
             </div>
             <div class="sliders-dots">
-                <div id="dotOne" onclick="previous()" class="dot active"></div>
-                <div id="dotTwo" onclick="next()" class="dot"></div>
-                <div id="dotThree" class="dot"></div>
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
             </div>
         </section>
 
@@ -375,26 +375,6 @@
     <footer>
 
     </footer>
-
-
-    <script>
-        let sliders = document.getElementById('sliders');
-        let dot1 = document.getElementById('dotOne');
-        let dot2 = document.getElementById('dotTwo');
-
-        function previous() {
-            sliders.style.marginLeft = '0';
-            document.querySelector('#dotOne').classList.add("active");
-            document.querySelector('#dotTwo').classList.toggle("active");
-        }
-
-        function next() {
-            sliders.style.marginLeft = '-100vw';
-            document.querySelector('#dotOne').classList.toggle("active");
-            document.querySelector('#dotTwo').classList.add("active");
-        }
-
-    </script>
 </body>
 
 </html>
