@@ -390,9 +390,8 @@ header {
 
 .bg-team {
     background-image: url('../../media/bg.jpg');
-    background-position: center;
     background-size: cover;
-    ;
+    background-position: center;
 }
 
 .default.dark.bg-team {
@@ -402,4 +401,54 @@ header {
 .section-team-area {
     padding: 50px 0px;
     background-color: rgba(5, 5, 5, 80%);
+}
+
+.section-content.our-team {
+    overflow: hidden;
+    max-width: 1200px;
+}
+
+.our-team .sliders {
+    width: 100vw;
+    height: 100%;
+}
+
+.our-team .slide {
+    width: 350px;
+    height: 430px;
+    display: inline-block;
+    background-color: var(--bg-light);
+    margin-right: 20px;
+}
+
+.our-team .slide-area {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+
+
+.our-team .sliders-dots {
+    width: 100vw;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.our-team .dot {
+    width: 12px;
+    height: 12px;
+    border: 2px solid var(--primary-color);
+    border-radius: 6px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.our-team .dot.active {
+    background-color: var(--primary-color);
 }
