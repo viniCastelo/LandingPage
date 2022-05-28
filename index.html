@@ -39,33 +39,37 @@
 
     <main>
         <section class="banner">
-            <div class="sliders">
+            <div id="sliders" class="sliders">
                 <div class="slide">
                     <div class="slide-area">
-                        <h2>DESIGN IS ABOUT <br> <span>COMUNICATION</span></h2>
-                        <h3>CALL US: +00 0 1234 5678</h3>
+                        <h2>DESIGN IS ABOUT<br> <span>COMUNICATION</span></h2>
+                        <h3>CALL US: +00 9 9876-5432</h3>
                         <a class="button" href="/">GET IN TOUCH!</a>
                     </div>
                 </div>
                 <div class="slide">
-                    <h2>DESIGN IS ABOUT <br> <span>COMUNICATION</span></h2>
-                    <h3>CALL US: +00 0 1234 5678</h3>
-                    <a class="button" href="/">GET IN TOUCH!</a>
+                    <div class="slide-area">
+                        <h2>DESIGN IS ABOUT <br> <span>COMUNICATION</span></h2>
+                        <h3>CALL US: +00 9 9876-5432</h3>
+                        <a class="button" href="/">GET IN TOUCH!</a>
+                    </div>
                 </div>
                 <div class="slide">
-                    <h2>DESIGN IS ABOUT <br> <span>COMUNICATION</span></h2>
-                    <h3>CALL US: +00 0 1234 5678</h3>
-                    <a class="button" href="/">GET IN TOUCH!</a>
+                    <div class="slide-area">
+                        <h2>DESIGN IS ABOUT <br> <span>COMUNICATION</span></h2>
+                        <h3>CALL US: +00 2 2222-2222</h3>
+                        <a class="button" href="/">GET IN TOUCH!</a>
+                    </div>
                 </div>
-                <div class="sliders-arrows">
-                    <div id="arrow-left" class="arrow-left">◀</div>
-                    <div id="arrow-right" class="arrow-right">▶</div>
-                </div>
-                <div class="sliders-dots">
-                    <div class="dot active"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                </div>
+            </div>
+            <div class="sliders-arrows">
+                <div id="arrow-left" onclick="previous()" class="arrow-left">◀</div>
+                <div id="arrow-right" onclick="next()" class="arrow-right">▶</div>
+            </div>
+            <div class="sliders-dots">
+                <div id="dotOne" onclick="previous()" class="dot active"></div>
+                <div id="dotTwo" onclick="next()" class="dot"></div>
+                <div id="dotThree" class="dot"></div>
             </div>
         </section>
 
@@ -278,34 +282,88 @@
         </section>
 
         <section id="our-team" class="default dark bg-team">
-            <div class="section-team-area">
+            <div class="our-team">
                 <div class="section-title">
                     <h2>Our Team</h2>
                     <h3>Our Co-Workers</h3>
                 </div>
-                <div class="section-content our-team">
-                    <div class="sliders">
-                        <div class="slide">
-                            <div class="slide-area">
-                                A-1
+                <div class="section-content">
+                    <div class="section-team">
+                        <div class="sliders">
+                            <div class="slide">
+                                <div class="slide-area">
+                                    <div class="image">
+                                        <img src="/media/mulher1.png" alt="Jane Doe">
+                                    </div>
+                                    <div class="name">
+                                        <h2>Jane Doe</h2>
+                                    </div>
+                                    <div class="work">
+                                        <span>Master mind</span>
+                                    </div>
+                                    <div class="social">
+                                        <a class="activated" href=""><img src="/assets/images/icones/twitter.png"
+                                                alt="Jane Doe - Twitter"></a>
+                                        <a href=""><img src="/assets/images/icones/linkedin.png"
+                                                alt="Jane Doe - LinkedIn"></a>
+                                        <a href=""><img src="/assets/images/icones/facebook.png"
+                                                alt="Jane Doe - Facebook"></a>
+                                        <a href=""><img src="/assets/images/icones/googleplus.png"
+                                                alt="Jane Doe - Google Plus"></a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="slide">
-                            <div class="slide-area">
-                                B-2
+                            <div class="slide">
+                                <div class="slide-area">
+                                    <div class="image">
+                                        <img src="/media/homem1.png" alt="Mike Shiller">
+                                    </div>
+                                    <div class="name">
+                                        <h2>Mike Shiller</h2>
+                                    </div>
+                                    <div class="work">
+                                        <span>Creative head</span>
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><img src="/assets/images/icones/twitter.png"
+                                                alt="Mike Shiller- Twitter"></a>
+                                        <a href=""><img src="/assets/images/icones/linkedin.png"
+                                                alt="Mike Shiller - LinkedIn"></a>
+                                        <a href=""><img src="/assets/images/icones/facebook.png"
+                                                alt="Mike Shiller - Facebook"></a>
+                                        <a href=""><img src="/assets/images/icones/googleplus.png"
+                                                alt="Mike Shiller - Google Plus"></a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="slide">
-                            <div class="slide-area">
-                                C-3
+                            <div class="slide">
+                                <div class="slide-area">
+                                    <div class="image">
+                                        <img src="/media/mulher2.png" alt="Anna Johns">
+                                    </div>
+                                    <div class="name">
+                                        <h2>Anna Johns</h2>
+                                    </div>
+                                    <div class="work">
+                                        <span>Technical lead</span>
+                                    </div>
+                                    <div class="social">
+                                        <a href=""><img src="/assets/images/icones/twitter.png"
+                                                alt="Anna Johns - Twitter"></a>
+                                        <a href=""><img src="/assets/images/icones/linkedin.png"
+                                                alt="Anna Johns - LinkedIn"></a>
+                                        <a href=""><img src="/assets/images/icones/facebook.png"
+                                                alt="Anna Johns - Facebook"></a>
+                                        <a href=""><img src="/assets/images/icones/googleplus.png"
+                                                alt="Anna Johns - Google Plus"></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="sliders-dots">
-                            <div class="dot active"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
+                            <div id="dotOne" onclick="previous()" class="dot active"></div>
+                            <div id="dotTwo" onclick="next()" class="dot"></div>
+                            <div id="dotThree" class="dot"></div>
                         </div>
                     </div>
                 </div>
@@ -318,6 +376,25 @@
 
     </footer>
 
+
+    <script>
+        let sliders = document.getElementById('sliders');
+        let dot1 = document.getElementById('dotOne');
+        let dot2 = document.getElementById('dotTwo');
+
+        function previous() {
+            sliders.style.marginLeft = '0';
+            document.querySelector('#dotOne').classList.add("active");
+            document.querySelector('#dotTwo').classList.toggle("active");
+        }
+
+        function next() {
+            sliders.style.marginLeft = '-100vw';
+            document.querySelector('#dotOne').classList.toggle("active");
+            document.querySelector('#dotTwo').classList.add("active");
+        }
+
+    </script>
 </body>
 
 </html>
