@@ -24,8 +24,15 @@ body {
     overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(0, 0, 0, 90%);
+}
 
-
+body::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 8px;
+}
 
 /* Menu */
 
@@ -96,7 +103,7 @@ header {
     border-radius: 20px;
     font-size: 10px;
     color: var(--text-light);
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 
@@ -591,4 +598,30 @@ header {
 
 .section-testimonials .pointer.active {
     background-color: var(--primary-color);
+}
+
+
+
+
+/* Company */
+
+.company {
+    height: 14 0px;
+    border-top: 1px solid #DEDEDE;
+    border-bottom: 1px solid #DEDEDE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.company .section-content ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.company .section-content ul li {
+    list-style: none;
+    display: flex;
+    padding: 0px 40px;
 }
